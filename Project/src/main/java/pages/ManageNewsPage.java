@@ -26,20 +26,24 @@ public class ManageNewsPage {
 	@FindBy(xpath = "//h1[text()=\"Manage News\"]")
 	private WebElement istitledisplayed;
 
-	public void clickManageUsers() {
-		PageUtility.clickOnElement(clickmanageusers);
+	public ManageNewsPage clickManageUsers() {
+		PageUtility.clickOnElementUsingClick(clickmanageusers);
+		return this;
 	}
 
-	public void clickNewsButton() {
-		PageUtility.clickOnElement(clicknewsbutton);
+	public ManageNewsPage clickNewsButton() {
+		PageUtility.clickOnElementUsingClick(clicknewsbutton);
+		return this;
 	}
 
-	public void enterNewsInTextField() {
+	public ManageNewsPage enterNewsInTextField() {
 		enternews.sendKeys("Hi my new news broadcast");
+		return this;
 	}
 
-	public void clickSaveButton() {
-		PageUtility.clickOnElement(clicksavebutton);
+	public ManageNewsPage clickSaveButton() {
+		PageUtility.clickOnElementUsingClick(clicksavebutton);
+		return this;
 	}
 
 	public boolean isTitleDisplayed() {

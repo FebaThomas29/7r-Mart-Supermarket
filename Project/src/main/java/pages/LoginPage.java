@@ -7,8 +7,6 @@ import org.openqa.selenium.support.PageFactory;
 
 import utilities.PageUtility;
 
-
-
 public class LoginPage {
 	public WebDriver driver;
 
@@ -23,30 +21,33 @@ public class LoginPage {
 	private WebElement passwordField;
 	@FindBy(xpath = "//button[@type='submit']")
 	private WebElement signinButton;
-	@FindBy(xpath="//p[text()=\"Dashboard\"]") 
+	@FindBy(xpath = "//p[text()=\"Dashboard\"]")
 	private WebElement dashboardtitle;
-	@FindBy(xpath="//*[text()=\" Alert!\"]//parent::div")
+	@FindBy(xpath = "//*[text()=\" Alert!\"]//parent::div")
 	private WebElement errormessage;
 
-	public void enterUsernameOnUserField(String username) {
+	public LoginPage enterUsernameOnUserField(String username) {
 		usernameField.sendKeys(username);
+		return this;
 	}
 
-	public void enterPasswordOnPasswordField(String password) {
+	public LoginPage enterPasswordOnPasswordField(String password) {
 		passwordField.sendKeys(password);
+		return this;
 	}
 
-	public void clickSignInButton() {
-		PageUtility.clickOnElement(signinButton);
+	public HomePage clickSignInButton() {
+		PageUtility.clickOnElementUsingClick(signinButton);
+		return new HomePage(driver);
 	}
-	public boolean isdashboardDisplayed()
-	{
+
+	public boolean isdashboardDisplayed() {
 		return dashboardtitle.isDisplayed();
 	}
-public boolean isErrormessageDisplayed()
-{
-	return errormessage.isDisplayed();
 
-}
+	public boolean isErrormessageDisplayed() {
+		return errormessage.isDisplayed();
+
+	}
 
 }

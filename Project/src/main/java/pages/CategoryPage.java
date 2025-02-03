@@ -13,6 +13,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import constants.Constants;
 import utilities.PageUtility;
+import utilities.WaitUtility;
 
 public class CategoryPage {
 	public WebDriver driver;
@@ -32,9 +33,9 @@ public class CategoryPage {
 	private WebElement discountfield;
 	@FindBy(xpath = "//input[@id='main_img']")
 	private WebElement choosefilebutton;
-	@FindBy(xpath = "//button[@type='submit']")
+	@FindBy(xpath = "//button[@class='btn btn-danger']")
 	private WebElement clicksavebutton;
-	@FindBy(xpath = "//h1[text()=\"Add Category\"]")
+	@FindBy(xpath = "//h1[@class='m-0 text-dark']")
 	private WebElement iscategorytitledisplayed;
 	@FindBy(xpath = "//a[@class='btn btn-rounded btn-primary']")
 	private WebElement searchfield;
@@ -45,29 +46,38 @@ public class CategoryPage {
 	@FindBy(xpath = "//a[@class='btn btn-rounded btn-warning']")
 	private WebElement resetbutton;
 
-	public void clickCategoryPage() {
-		PageUtility.clickOnElement(clickcategorymenu);
+	public CategoryPage clickCategoryPage() {
+		WaitUtility.waitUntilElementToBeClickable(driver, clickcategorymenu);
+		PageUtility.clickOnElementUsingClick(clickcategorymenu);
+		return this;
 	}
 
-	public void clickCategoryNewButton() {
-		PageUtility.clickOnElement(clickcategorynew);
+	public CategoryPage clickCategoryNewButton() {
+		PageUtility.clickOnElementUsingClick(clickcategorynew);
+		return this;
 	}
 
-	public void addCatergoryField(String categoryname) {
+	public CategoryPage addCatergoryField(String categoryname) {
 		categoryfield.sendKeys(categoryname);
+		return this;
 	}
 
-	public void clickDiscountField() {
-		PageUtility.clickOnElement(discountfield);
+	public CategoryPage clickDiscountField() {
+		PageUtility.clickOnElementUsingClick(discountfield);
+		return this;
 	}
 
-	public void chooseFileButton(String choosebutton)  {
+	public CategoryPage chooseFileButton(String choosebutton) {
 		choosefilebutton.sendKeys(choosebutton);
+		return this;
 	}
 
-	public void clickSaveButton() {
-		
-		PageUtility.draggableAction(clicksavebutton);
+	public CategoryPage clickSaveButton() {
+
+		WaitUtility.waitUntilElementToBeClickable(driver, clicksavebutton);
+		PageUtility.scrollDown(driver);
+		PageUtility.clickOnElement(clicksavebutton, driver);
+		return this;
 
 	}
 
@@ -75,23 +85,22 @@ public class CategoryPage {
 		return iscategorytitledisplayed.isDisplayed();
 	}
 
-	public void clickSearchField() {
-		PageUtility.clickOnElement(searchfield);
+	public CategoryPage clickSearchField() {
+		PageUtility.clickOnElementUsingClick(searchfield);
+		return this;
 	}
 
-	public void categorySearchField(String categoryname) {
+	public CategoryPage categorySearchField(String categoryname) {
 		categorysearchfield.sendKeys(categoryname);
+		return this;
 	}
 
-	public void clickSearchButton() {
-		PageUtility.clickOnElement(searchbuttton);
-		
+	public CategoryPage clickSearchButton() {
+		PageUtility.clickOnElementUsingClick(searchbuttton);
+		return this;
+
 	}
 
-	public void clickResetButton() {
-		PageUtility.clickOnElement(resetbutton);
-		
-	}
-
+	
 
 }

@@ -1,5 +1,6 @@
 package utilities;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -9,10 +10,16 @@ public class PageUtility {
 
 	public static WebDriver driver;
 
-	public static void clickOnElement(WebElement element) {
+	public static void clickOnElement(WebElement element,WebDriver driver) {
 
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click()", element);
+
+	}
+
+	public static void clickOnElementUsingClick(WebElement element) {
+		
 		element.click();
-
 	}
 
 	public static void righClick(WebElement element) {
@@ -42,20 +49,40 @@ public class PageUtility {
 		act.moveToElement(element).build().perform();
 
 	}
+	public static void clickSaveButton(WebElement element) {
+		Actions actions = new Actions(driver);
+		actions.moveToElement(element).click().perform();
+		}
 
-	public static void selectByVisibleText(WebElement element) {
+	public static String selectByVisibleText(WebElement element, String text) {
 		Select select = new Select(element);
-		select.selectByVisibleText(null);
+		select.selectByVisibleText(text);
+		WebElement selectedElement = select.getFirstSelectedOption();
+		return selectedElement.getText();
 	}
 
-	public static void selectByIndex(WebElement element) {
+	public static String selectByIndex(WebElement element, int num) {
 		Select select = new Select(element);
 		select.selectByIndex(0);
+		WebElement selectedElement = select.getFirstSelectedOption();
+		return selectedElement.getText();
 	}
 
-	public static void selectByValue(WebElement element) {
+	public static String selectByValue(WebElement element, String text) {
 		Select select = new Select(element);
-		select.selectByValue(null);
+		select.selectByValue("");
+		WebElement selectedElement = select.getFirstSelectedOption();
+		return selectedElement.getText();
+	}
+
+	public static void scrollDown(WebDriver driver) {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,350)", "");
+	}
+
+	public static void scrollUp() {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,-350)", "");
 	}
 
 }

@@ -8,6 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
 import utilities.PageUtility;
+import utilities.WaitUtility;
 
 public class SubCategoryPage {
 	public WebDriver driver;
@@ -40,48 +41,62 @@ public class SubCategoryPage {
 	@FindBy(xpath = "//h1[@class='m-0 text-dark']")
 	private WebElement isdisplayedsubcategorytitle;
 
-	public void clickSubCategoryMenu() {
-		PageUtility.clickOnElement(clicksubcategory);
+	public HomePage clickSubCategoryMenu() {
+		PageUtility.clickOnElementUsingClick(clicksubcategory);
+		return new HomePage(driver);
 	}
 
-	public void clickNewButton() {
-		PageUtility.clickOnElement(clicknewbutton);
+	public SubCategoryPage clickNewButton() {
+		PageUtility.clickOnElementUsingClick(clicknewbutton);
+		return this;
 	}
 
-	public void selectCategoryFromDropdown() {
-		Select select = new Select(selectcategory);
-		select.selectByVisibleText("Honey");
+	public SubCategoryPage selectCategoryFromDropdown() {
+		
+		PageUtility.selectByVisibleText(selectcategory, "biscuit");
+		return this;
 	}
 
-	public void enterSubCategoryField(String subcategoryname) {
+	public SubCategoryPage enterSubCategoryField(String subcategoryname) {
 		entersubcategoryfield.sendKeys(subcategoryname);
+		return this;
 	}
 
-	public void chooseFileButton(String choosebutton) {
+	public SubCategoryPage chooseFileButton(String choosebutton) {
 		choosefilebutton.sendKeys(choosebutton);
+		return this;
 	}
 
-	public void clickSaveButtonSubCategory() {
-		Actions act = new Actions(driver);
-		act.moveToElement(clicksavebutton).click().perform();
+	public SubCategoryPage clickSaveButtonSubCategory() {
+		
+		WaitUtility.waitUntilElementToBeClickable(driver, clicksavebutton);
+		PageUtility.scrollDown(driver);
+		PageUtility.clickOnElement(clicksavebutton, driver);
+		return this;
+		
 	}
 
-	public void clickSearchIcon() {
-		PageUtility.clickOnElement(clicksearchicon);
+	public SubCategoryPage clickSearchIcon() {
+		PageUtility.clickOnElementUsingClick(clicksearchicon);
+		return this;
 	}
 
-	public void categorySearchDropdown() {
-		Select select = new Select(categorysearchdropdown);
-		select.selectByVisibleText("Honey");
+	public SubCategoryPage categorySearchDropdown() {
+		PageUtility.selectByVisibleText(categorysearchdropdown, "Honey");
+		return this;
+		//Select select = new Select(categorysearchdropdown);
+		//select.selectByVisibleText("Honey");
 	}
 
-	public void enterSelectCatergoryField(String subcategoryname) {
+	public SubCategoryPage enterSelectCatergoryField(String subcategoryname) {
 		searchsubcategoryfield.sendKeys(subcategoryname);
+		return this;
 	}
 
-	public void clickSearchbuttoninSearchPage() {
-		PageUtility.clickOnElement(clicksearchbuttoninsearchpage);
-		clicksearchbuttoninsearchpage.click();
+	public SubCategoryPage clickSearchbuttoninSearchPage() {
+		PageUtility.clickOnElementUsingClick(clicksearchbuttoninsearchpage);
+		return this;
+		//clicksearchbuttoninsearchpage.click();
 	}
 
 	public boolean subCategoryTitleIsDisplayed() {

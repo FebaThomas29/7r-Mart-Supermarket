@@ -35,33 +35,39 @@ public class AdminUserPage {
 	private WebElement admintitleisdisplayed;
 	
 
-	public void clickAdminUsers() {
-		PageUtility.clickOnElement(clickadminusers);
+	public HomePage clickAdminUsers() {
+		PageUtility.clickOnElementUsingClick(clickadminusers);
+		return new HomePage(driver);
 	}
 
-	public void clickManageUsers() {
-		PageUtility.clickOnElement(clickmanageusers);
+	public AdminUserPage clickManageUsers() {
+		PageUtility.clickOnElementUsingClick(clickmanageusers);
+		return this;
 	}
 
-	public void clickNewUserButton() {
-		PageUtility.clickOnElement(clicknewuserbutton);
+	public AdminUserPage clickNewUserButton() {
+		PageUtility.clickOnElementUsingClick(clicknewuserbutton);
+		return this;
 	}
 
-	public void enterValueInUsernameField(String username) {
+	public AdminUserPage enterValueInUsernameField(String username) {
 		username1.sendKeys(username);
+		return this;
 	}
 
-	public void enterValueInPasswordField(String password) {
+	public AdminUserPage enterValueInPasswordField(String password) {
 		password1.sendKeys(password);
+		return this;
 	}
 
-	public void selectUserType() {
-		Select select = new Select(usertype);
-		select.selectByVisibleText("Staff");
+	public AdminUserPage selectUserType() {
+		PageUtility.selectByVisibleText(usertype, "Staff");
+		return this;
 	}
 
-	public void clickSaveButton() {
-		PageUtility.clickOnElement(clicksavebutton);
+	public AdminUserPage clickSaveButton() {
+		PageUtility.clickOnElementUsingClick(clicksavebutton);
+		return this;
 	}
 
 	public boolean adminTitleIsDisplayed() {
