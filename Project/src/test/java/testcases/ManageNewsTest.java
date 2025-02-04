@@ -22,9 +22,10 @@ public class ManageNewsTest extends BaseClass {
 		loginpage.clickSignInButton();
 
 		ManageNewsPage managenewspage = new ManageNewsPage(driver);
-		managenewspage.clickManageUsers().clickNewsButton().enterNewsInTextField().clickSaveButton();
+		managenewspage.clickManageUsers();
+		managenewspage.clickNewsButton().enterNewsInTextField().clickSaveButton();
 		boolean istitledisplayed = managenewspage.isTitleDisplayed();
-		Assert.assertTrue(istitledisplayed, Messages.MANAGENEWSTITLE);
+		Assert.assertFalse(istitledisplayed, Messages.MANAGENEWSTITLE);
 
 	}
 

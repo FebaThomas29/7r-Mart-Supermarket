@@ -9,10 +9,10 @@
 		<classes>
 		<class name="testcases.LoginTest"></class>
 		<class name="testcases.HomePageTest"></class>
-		
-			<class name="testcases.SubCategoryTest">
-			
-			</class>
+		<class name="testcases.CategoryTest"></class>
+		<class name="testcases.SubCategoryTest"></class>
+		<class name="testcases.AdminUserTest"></class>
+		<class name="testcases.ManageNewsTest"></class>
 		</classes>
 </test> 
 </suite> <!-- Suite -->

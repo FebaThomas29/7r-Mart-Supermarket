@@ -23,12 +23,12 @@ public class ManageNewsPage {
 	private WebElement enternews;
 	@FindBy(xpath = "//button[@name='create']")
 	private WebElement clicksavebutton;
-	@FindBy(xpath = "//h1[text()=\"Manage News\"]")
+	@FindBy(xpath = "//h1[@class='m-0 text-dark']")
 	private WebElement istitledisplayed;
 
-	public ManageNewsPage clickManageUsers() {
+	public HomePage clickManageUsers() {
 		PageUtility.clickOnElementUsingClick(clickmanageusers);
-		return this;
+		return new HomePage(driver);
 	}
 
 	public ManageNewsPage clickNewsButton() {

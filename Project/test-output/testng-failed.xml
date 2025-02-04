@@ -7,13 +7,13 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testcases.SubCategoryTest">
+      <class name="testcases.ManageNewsTest">
         <methods>
           <include name="initializeBrowser"/>
           <include name="driverQuit"/>
-          <include name="searchTheSubCategoryFromTheList"/>
+          <include name="createNewManageNewsToThePage"/>
         </methods>
-      </class> <!-- testcases.SubCategoryTest -->
+      </class> <!-- testcases.ManageNewsTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
