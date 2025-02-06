@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import utilities.PageUtility;
+import utilities.WaitUtility;
 
 public class LoginPage {
 	public WebDriver driver;
@@ -37,7 +38,9 @@ public class LoginPage {
 	}
 
 	public HomePage clickSignInButton() {
+		WaitUtility.waitUntilElementToBeClickable(driver, signinButton);
 		PageUtility.clickOnElementUsingClick(signinButton);
+		
 		return new HomePage(driver);
 	}
 

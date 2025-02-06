@@ -7,17 +7,11 @@
       <class name="testcases.LoginTest">
         <methods>
           <include name="initializeBrowser"/>
+          <include name="userLoginWithInvalidUsernameAndValidPassword"/>
           <include name="driverQuit"/>
           <include name="userLoginWithValidUsernameAndValidPassword"/>
         </methods>
       </class> <!-- testcases.LoginTest -->
-      <class name="testcases.HomePageTest">
-        <methods>
-          <include name="clickingOnLogoutFromHomePage"/>
-          <include name="initializeBrowser"/>
-          <include name="driverQuit"/>
-        </methods>
-      </class> <!-- testcases.HomePageTest -->
     </classes>
   </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Paralleltesting] -->

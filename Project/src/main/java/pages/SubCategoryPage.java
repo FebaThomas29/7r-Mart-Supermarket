@@ -84,8 +84,6 @@ public class SubCategoryPage {
 	public SubCategoryPage categorySearchDropdown() {
 		PageUtility.selectByVisibleText(categorysearchdropdown, "Honey");
 		return this;
-		// Select select = new Select(categorysearchdropdown);
-		// select.selectByVisibleText("Honey");
 	}
 
 	public SubCategoryPage enterSelectCatergoryField(String subcategoryname) {
@@ -96,7 +94,6 @@ public class SubCategoryPage {
 	public SubCategoryPage clickSearchbuttoninSearchPage() {
 		PageUtility.clickOnElementUsingClick(clicksearchbuttoninsearchpage);
 		return this;
-		// clicksearchbuttoninsearchpage.click();
 	}
 
 	public boolean subCategoryTitleIsDisplayed() {

@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Paralleltesting" class="navigator-link">
-              <span class="suite-name border-skipped">Paralleltesting</span>
+              <span class="suite-name border-passed">Paralleltesting</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,26 +92,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,  2 skipped,  </span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Paralleltesting" class="hide-methods skipped suite-Paralleltesting"> (hide)</a> <!-- hide-methods skipped suite-Paralleltesting -->
-                      <a href="#" panel-name="suite-Paralleltesting" class="show-methods skipped suite-Paralleltesting"> (show)</a> <!-- show-methods skipped suite-Paralleltesting -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Paralleltesting" class="hide-methods passed suite-Paralleltesting"> (hide)</a> <!-- hide-methods passed suite-Paralleltesting -->
+                      <a href="#" panel-name="suite-Paralleltesting" class="show-methods passed suite-Paralleltesting"> (show)</a> <!-- show-methods passed suite-Paralleltesting -->
                     </span>
-                    <div class="method-list-content skipped suite-Paralleltesting">
+                    <div class="method-list-content passed suite-Paralleltesting">
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Paralleltesting" title="testcases.HomePageTest" class="method navigator-link" hash-for-method="clickingOnLogoutFromHomePage">clickingOnLogoutFromHomePage</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Paralleltesting" title="testcases.LoginTest" class="method navigator-link" hash-for-method="userLoginWithInvalidUsernameAndValidPassword">userLoginWithInvalidUsernameAndValidPassword</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Paralleltesting" title="testcases.LoginTest" class="method navigator-link" hash-for-method="userLoginWithValidUsernameAndValidPassword">userLoginWithValidUsernameAndValidPassword</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-Paralleltesting -->
+                    </div> <!-- method-list-content passed suite-Paralleltesting -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -123,88 +123,32 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Paralleltesting" class="panel Paralleltesting">
-          <div class="suite-Paralleltesting-class-skipped">
+          <div class="suite-Paralleltesting-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="passed.png"/>
               <span class="class-name">testcases.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="userLoginWithInvalidUsernameAndValidPassword">
+                  </a> <!-- userLoginWithInvalidUsernameAndValidPassword -->
+                  <span class="method-name">userLoginWithInvalidUsernameAndValidPassword</span>
+                  <em>
+(User Login With InValid Username and Valid Password)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="userLoginWithValidUsernameAndValidPassword">
                   </a> <!-- userLoginWithValidUsernameAndValidPassword -->
                   <span class="method-name">userLoginWithValidUsernameAndValidPassword</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_REFUSED
-  (Session info: chrome=132.0.6834.160)
-Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.13&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [aaa3b526820cab884bad0806d4251912, get {url=https://groceryapp.uniqassosiates.com/admin/login}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.160, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\febat\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51093}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51093/devtoo..., se:cdpVersion: 132.0.6834.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: aaa3b526820cab884bad0806d4251912
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
-	at automationcore.BaseClass.initializeBrowser(BaseClass.java:43)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-... Removed 22 stack frames
-</div> <!-- stack-trace -->
                   <em>
 (User Login With Valid Username and Valid Password)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Paralleltesting-class-skipped -->
-          <div class="suite-Paralleltesting-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">testcases.HomePageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="clickingOnLogoutFromHomePage">
-                  </a> <!-- clickingOnLogoutFromHomePage -->
-                  <span class="method-name">clickingOnLogoutFromHomePage</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_REFUSED
-  (Session info: chrome=132.0.6834.160)
-Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.13&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e5f0fd071bf401a83edc41e099b93348, get {url=https://groceryapp.uniqassosiates.com/admin/login}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.160, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\febat\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51094}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51094/devtoo..., se:cdpVersion: 132.0.6834.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e5f0fd071bf401a83edc41e099b93348
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
-	at automationcore.BaseClass.initializeBrowser(BaseClass.java:43)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-... Removed 22 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(click logout)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Paralleltesting-class-skipped -->
+          </div> <!-- suite-Paralleltesting-class-passed -->
         </div> <!-- panel Paralleltesting -->
         <div panel-name="test-xml-Paralleltesting" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -221,9 +165,9 @@ Session ID: e5f0fd071bf401a83edc41e099b93348
       &lt;class name=&quot;testcases.LoginTest&quot;&gt;
         &lt;methods&gt;
           &lt;include name=&quot;userLoginWithValidUsernameAndValidPassword&quot;/&gt;
+          &lt;include name=&quot;userLoginWithInvalidUsernameAndValidPassword&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- testcases.LoginTest --&gt;
-      &lt;class name=&quot;testcases.HomePageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test1 --&gt;
 &lt;/suite&gt; &lt;!-- Paralleltesting --&gt;
@@ -237,7 +181,7 @@ Session ID: e5f0fd071bf401a83edc41e099b93348
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test1 (2 classes)</span>
+                <span class="test-name">Test1 (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -251,7 +195,7 @@ Session ID: e5f0fd071bf401a83edc41e099b93348
               <span class="test-group-name">smoke</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">clickingOnLogoutFromHomePage</span>
+                <span class="method-in-group-name">userLoginWithInvalidUsernameAndValidPassword</span>
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
@@ -277,18 +221,18 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'clickingOnLogoutFromHomePage')
-data.setCell(0, 2, 'testcases.HomePageTest')
-data.setCell(0, 3, 0);
+data.setCell(0, 1, 'userLoginWithValidUsernameAndValidPassword')
+data.setCell(0, 2, 'testcases.LoginTest')
+data.setCell(0, 3, 2244);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'userLoginWithValidUsernameAndValidPassword')
+data.setCell(1, 1, 'userLoginWithInvalidUsernameAndValidPassword')
 data.setCell(1, 2, 'testcases.LoginTest')
-data.setCell(1, 3, 0);
+data.setCell(1, 3, 596);
 window.suiteTableData['Paralleltesting']= { tableData: data, tableDiv: 'times-div-Paralleltesting'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 0 ms</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-Paralleltesting">
               </div> <!-- times-div-Paralleltesting -->
             </div> <!-- times-div -->
@@ -303,14 +247,12 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Paralleltesting" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">3 ignored methods</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">testcases.LoginTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">userLoginWithInvalidUsernameAndValidPassword</span>
-                <br/>
                 <span class="ignored-method-name">userLoginWithInvalidUsernameAndInvalidPassword</span>
                 <br/>
                 <span class="ignored-method-name">userLoginWithValidUsernameAndInvalidPassword</span>
@@ -327,33 +269,28 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">initializeBrowser(Chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testcases.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">initializeBrowser(Chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testcases.LoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">userLoginWithValidUsernameAndValidPassword</span>
+                <span class="method-start">6731 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">driverQuit([TestResult name=userLoginWithValidUsernameAndValidPassword status=SKIP method=LoginTest.userLoginWi...)</span>
-                <span class="method-start">18925 ms</span>
+                <span class="method-name">driverQuit([TestResult name=userLoginWithValidUsernameAndValidPassword status=SUCCESS method=LoginTest.userLogi...)</span>
+                <span class="method-start">8986 ms</span>
               </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testcases.HomePageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">userLoginWithInvalidUsernameAndValidPassword</span>
+                <span class="method-start">21482 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">driverQuit([TestResult name=clickingOnLogoutFromHomePage status=SKIP method=HomePageTest.clickingOnLogoutFromHo...)</span>
-                <span class="method-start">32416 ms</span>
+                <span class="method-name">driverQuit([TestResult name=userLoginWithInvalidUsernameAndValidPassword status=SUCCESS method=LoginTest.userLo...)</span>
+                <span class="method-start">22079 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
