@@ -25,7 +25,8 @@ public class CategoryTest extends BaseClass {
 		String categoryname = ExcelUtility.readStringData(1, 0, "Category");
 		String choosefile = Constants.TESTDATAFILE1;
 		CategoryPage categorypage = new CategoryPage(driver);
-		categorypage.clickCategoryPage().clickCategoryNewButton().addCatergoryField(categoryname).clickDiscountField().chooseFileButton(choosefile).clickSaveButton();
+		categorypage.clickCategoryPage().clickCategoryNewButton().addCatergoryField(categoryname).clickDiscountField()
+				.chooseFileButton(choosefile).clickSaveButton();
 		categorypage.categoryTitleDisplayed();
 		boolean categoryTitleDisplayed = categorypage.categoryTitleDisplayed();
 		Assert.assertTrue(categoryTitleDisplayed, Messages.TITLENOTFOUND);

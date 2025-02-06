@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <parameter name="browser" value="chrome"></parameter>
+	<parameter name="browser" value="chrome"></parameter>
 	<listeners>
 		<listener class-name="listeners.ListenerClass"></listener>
 	</listeners>
-	 <test thread-count="5" name="Test">
+	<test thread-count="5" name="Test">
 		<classes>
-		<class name="testcases.LoginTest"></class>
-		<class name="testcases.HomePageTest"></class>
-		<class name="testcases.CategoryTest"></class>
-		<class name="testcases.SubCategoryTest"></class>
-		<class name="testcases.AdminUserTest"></class>
-		<class name="testcases.ManageNewsTest"></class>
+			<class name="testcases.LoginTest"></class>
+			<class name="testcases.HomePageTest"></class>
+			<class name="testcases.CategoryTest"></class>
+			<class name="testcases.SubCategoryTest"></class>
+			<class name="testcases.AdminUserTest"></class>
+			<class name="testcases.ManageNewsTest"></class>
 		</classes>
-</test> 
-</suite> <!-- Suite -->
+	</test>
+</suite> <!--
+Suite -->

@@ -33,7 +33,6 @@ public class AdminUserPage {
 	private WebElement clicksavebutton;
 	@FindBy(xpath = "//h1[text()=\"Admin Users\"]")
 	private WebElement admintitleisdisplayed;
-	
 
 	public HomePage clickAdminUsers() {
 		PageUtility.clickOnElementUsingClick(clickadminusers);

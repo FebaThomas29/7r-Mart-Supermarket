@@ -52,7 +52,7 @@ public class SubCategoryPage {
 	}
 
 	public SubCategoryPage selectCategoryFromDropdown() {
-		
+
 		PageUtility.selectByVisibleText(selectcategory, "biscuit");
 		return this;
 	}
@@ -68,12 +68,12 @@ public class SubCategoryPage {
 	}
 
 	public SubCategoryPage clickSaveButtonSubCategory() {
-		
+
 		WaitUtility.waitUntilElementToBeClickable(driver, clicksavebutton);
 		PageUtility.scrollDown(driver);
 		PageUtility.clickOnElement(clicksavebutton, driver);
 		return this;
-		
+
 	}
 
 	public SubCategoryPage clickSearchIcon() {
@@ -84,8 +84,8 @@ public class SubCategoryPage {
 	public SubCategoryPage categorySearchDropdown() {
 		PageUtility.selectByVisibleText(categorysearchdropdown, "Honey");
 		return this;
-		//Select select = new Select(categorysearchdropdown);
-		//select.selectByVisibleText("Honey");
+		// Select select = new Select(categorysearchdropdown);
+		// select.selectByVisibleText("Honey");
 	}
 
 	public SubCategoryPage enterSelectCatergoryField(String subcategoryname) {
@@ -96,7 +96,7 @@ public class SubCategoryPage {
 	public SubCategoryPage clickSearchbuttoninSearchPage() {
 		PageUtility.clickOnElementUsingClick(clicksearchbuttoninsearchpage);
 		return this;
-		//clicksearchbuttoninsearchpage.click();
+		// clicksearchbuttoninsearchpage.click();
 	}
 
 	public boolean subCategoryTitleIsDisplayed() {

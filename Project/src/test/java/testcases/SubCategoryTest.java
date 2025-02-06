@@ -27,10 +27,10 @@ public class SubCategoryTest extends BaseClass {
 		String choosefile = Constants.SUBCATEGORYFILE;
 		SubCategoryPage subcategorypage = new SubCategoryPage(driver);
 		subcategorypage.clickSubCategoryMenu();
-		subcategorypage.clickNewButton().selectCategoryFromDropdown().enterSubCategoryField(subcategoryname).chooseFileButton(choosefile).clickSaveButtonSubCategory();
+		subcategorypage.clickNewButton().selectCategoryFromDropdown().enterSubCategoryField(subcategoryname)
+				.chooseFileButton(choosefile).clickSaveButtonSubCategory();
 		boolean subcategoryTitleDisplayed = subcategorypage.subCategoryTitleIsDisplayed();
 		Assert.assertTrue(subcategoryTitleDisplayed, Messages.TITLENOTFOUND1);
 	}
-
 
 }
