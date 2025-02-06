@@ -12,7 +12,7 @@ import pages.LoginPage;
 import utilities.ExcelUtility;
 
 public class HomePageTest extends BaseClass {
-	private static final String ELEMENTNOTFOUND = null;
+
 
 	@Test(groups = { "smoke" }, description = "click logout", priority = 1)
 
@@ -30,7 +30,7 @@ public class HomePageTest extends BaseClass {
 		homepage.clickLogOut();
 
 		boolean islogintitledisplayed = homepage.isLoginTitleDispalyed();
-		Assert.assertTrue(islogintitledisplayed, ELEMENTNOTFOUND);
+		Assert.assertTrue(islogintitledisplayed, Messages.LOGOUTERROR);
 
 	}
 

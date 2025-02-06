@@ -29,7 +29,7 @@ public class CategoryTest extends BaseClass {
 				.chooseFileButton(choosefile).clickSaveButton();
 		categorypage.categoryTitleDisplayed();
 		boolean categoryTitleDisplayed = categorypage.categoryTitleDisplayed();
-		Assert.assertTrue(categoryTitleDisplayed, Messages.TITLENOTFOUND);
+		Assert.assertTrue(categoryTitleDisplayed, Messages.CATEGORYERROR);
 	}
 
 	@Test(groups = { "smoke" }, description = "Search a category", priority = 2)
@@ -44,7 +44,7 @@ public class CategoryTest extends BaseClass {
 		CategoryPage categorypage = new CategoryPage(driver);
 		categorypage.clickCategoryPage().clickSearchField().categorySearchField(categoryname).clickSearchButton();
 		boolean categoryTitleDisplayed = categorypage.categoryTitleDisplayed();
-		Assert.assertTrue(categoryTitleDisplayed, Messages.TITLENOTFOUND);
+		Assert.assertTrue(categoryTitleDisplayed, Messages.CATEGORYSEARCHERROR);
 	}
 
 }

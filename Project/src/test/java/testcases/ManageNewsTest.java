@@ -25,7 +25,7 @@ public class ManageNewsTest extends BaseClass {
 		managenewspage.clickManageUsers();
 		managenewspage.clickNewsButton().enterNewsInTextField().clickSaveButton();
 		boolean istitledisplayed = managenewspage.isTitleDisplayed();
-		Assert.assertFalse(istitledisplayed, Messages.MANAGENEWSTITLE);
+		Assert.assertFalse(istitledisplayed, Messages.MANAGENEWSERROR);
 
 	}
 

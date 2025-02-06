@@ -32,7 +32,7 @@ public class AdminUserTest extends BaseClass { // add the admin user test
 		adminuser.clickManageUsers().clickNewUserButton().enterValueInUsernameField(username1)
 				.enterValueInPasswordField(password1).selectUserType().clickSaveButton();
 		boolean admintitleisdisplayed = adminuser.adminTitleIsDisplayed();
-		Assert.assertTrue(admintitleisdisplayed, Messages.ADMINTITLE);
+		Assert.assertTrue(admintitleisdisplayed, Messages.ADMINERROR);
 	}
 
 }

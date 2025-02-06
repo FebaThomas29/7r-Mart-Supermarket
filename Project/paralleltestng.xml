@@ -9,10 +9,8 @@
 			<class name="testcases.LoginTest">
 				<methods>
 					<include name="userLoginWithValidUsernameAndValidPassword"></include>
+					<include name="userLoginWithInvalidUsernameAndValidPassword"></include>
 				</methods>
-			</class>
-			<class name="testcases.HomePageTest">
-
 			</class>
 
 		</classes>

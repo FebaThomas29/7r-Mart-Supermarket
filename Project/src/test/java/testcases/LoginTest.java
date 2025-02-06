@@ -24,7 +24,7 @@ public class LoginTest extends BaseClass {
 		LoginPage loginpage = new LoginPage(driver);
 		loginpage.enterUsernameOnUserField(username).enterPasswordOnPasswordField(password).clickSignInButton();
 		boolean isdashboardDisplayed = loginpage.isdashboardDisplayed();
-		Assert.assertTrue(isdashboardDisplayed, Messages.ELEMENTNOTFOUND);
+		Assert.assertTrue(isdashboardDisplayed, Messages.CREDENTIALERROR);
 
 	}
 
@@ -34,7 +34,7 @@ public class LoginTest extends BaseClass {
 		LoginPage loginpage = new LoginPage(driver);
 		loginpage.enterUsernameOnUserField(username).enterPasswordOnPasswordField(password).clickSignInButton();
 		boolean isErrormessageDisplayed = loginpage.isErrormessageDisplayed();
-		Assert.assertTrue(isErrormessageDisplayed, Messages.ALERTNOTFOUND);
+		Assert.assertTrue(isErrormessageDisplayed, Messages.PASSWORDCREDENTIALERROR);
 
 	}
 
@@ -45,7 +45,7 @@ public class LoginTest extends BaseClass {
 		LoginPage loginpage = new LoginPage(driver);
 		loginpage.enterUsernameOnUserField(username).enterPasswordOnPasswordField(password).clickSignInButton();
 		boolean isErrormessageDisplayed = loginpage.isErrormessageDisplayed();
-		Assert.assertTrue(isErrormessageDisplayed, Messages.ALERTNOTFOUND);
+		Assert.assertTrue(isErrormessageDisplayed, Messages.USERNAMECREDENTIALERROR);
 
 	}
 
@@ -56,7 +56,7 @@ public class LoginTest extends BaseClass {
 		LoginPage loginpage = new LoginPage(driver);
 		loginpage.enterUsernameOnUserField(username).enterPasswordOnPasswordField(password).clickSignInButton();
 		boolean isErrormessageDisplayed = loginpage.isErrormessageDisplayed();
-		Assert.assertTrue(isErrormessageDisplayed, Messages.ALERTNOTFOUND);
+		Assert.assertTrue(isErrormessageDisplayed, Messages.INVALIDCREDENTIALERROR);
 
 	}
 

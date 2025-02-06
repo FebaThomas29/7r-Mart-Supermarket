@@ -30,7 +30,7 @@ public class SubCategoryTest extends BaseClass {
 		subcategorypage.clickNewButton().selectCategoryFromDropdown().enterSubCategoryField(subcategoryname)
 				.chooseFileButton(choosefile).clickSaveButtonSubCategory();
 		boolean subcategoryTitleDisplayed = subcategorypage.subCategoryTitleIsDisplayed();
-		Assert.assertTrue(subcategoryTitleDisplayed, Messages.TITLENOTFOUND1);
+		Assert.assertTrue(subcategoryTitleDisplayed, Messages.SUBCATEGORYERROR);
 	}
 
 }
