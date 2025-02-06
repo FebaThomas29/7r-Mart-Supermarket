@@ -1,72 +1,154 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="0" failed="0" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-03T13:11:49 IST" name="Suite" finished-at="2025-02-03T13:12:42 IST" duration-ms="52601">
+  <suite started-at="2025-02-06T08:19:22 IST" name="Paralleltesting" finished-at="2025-02-06T08:19:54 IST" duration-ms="32650">
     <groups>
       <group name="smoke">
-        <method signature="AdminUserTest.addNewAdminUsersToThePage()[pri:1, instance:testcases.AdminUserTest@15f47664]" name="addNewAdminUsersToThePage" class="testcases.AdminUserTest"/>
-        <method signature="CategoryTest.addingTheNewCategoryToThePage()[pri:1, instance:testcases.CategoryTest@928763c]" name="addingTheNewCategoryToThePage" class="testcases.CategoryTest"/>
-        <method signature="HomePageTest.clickingOnLogoutFromHomePage()[pri:1, instance:testcases.HomePageTest@3cfdd820]" name="clickingOnLogoutFromHomePage" class="testcases.HomePageTest"/>
-        <method signature="LoginTest.userLoginWithValidUsernameAndValidPassword()[pri:1, instance:testcases.LoginTest@4bff7da0]" name="userLoginWithValidUsernameAndValidPassword" class="testcases.LoginTest"/>
-        <method signature="ManageNewsTest.createNewManageNewsToThePage()[pri:1, instance:testcases.ManageNewsTest@471a9022]" name="createNewManageNewsToThePage" class="testcases.ManageNewsTest"/>
-        <method signature="SubCategoryTest.addingTheNewSubCategoryToThePage()[pri:1, instance:testcases.SubCategoryTest@e25951c]" name="addingTheNewSubCategoryToThePage" class="testcases.SubCategoryTest"/>
-        <method signature="CategoryTest.searchTheCategoryFromTheList()[pri:2, instance:testcases.CategoryTest@928763c]" name="searchTheCategoryFromTheList" class="testcases.CategoryTest"/>
-        <method signature="LoginTest.userLoginWithInvalidUsernameAndValidPassword()[pri:2, instance:testcases.LoginTest@4bff7da0]" name="userLoginWithInvalidUsernameAndValidPassword" class="testcases.LoginTest"/>
-        <method signature="LoginTest.userLoginWithValidUsernameAndInvalidPassword(java.lang.String,java.lang.String)[pri:3, instance:testcases.LoginTest@4bff7da0]" name="userLoginWithValidUsernameAndInvalidPassword" class="testcases.LoginTest"/>
-        <method signature="LoginTest.userLoginWithInvalidUsernameAndInvalidPassword()[pri:4, instance:testcases.LoginTest@4bff7da0]" name="userLoginWithInvalidUsernameAndInvalidPassword" class="testcases.LoginTest"/>
+        <method signature="HomePageTest.clickingOnLogoutFromHomePage()[pri:1, instance:testcases.HomePageTest@2f4948e4]" name="clickingOnLogoutFromHomePage" class="testcases.HomePageTest"/>
+        <method signature="LoginTest.userLoginWithValidUsernameAndValidPassword()[pri:1, instance:testcases.LoginTest@6b2ea799]" name="userLoginWithValidUsernameAndValidPassword" class="testcases.LoginTest"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2025-02-03T13:11:49 IST" name="Test" finished-at="2025-02-03T13:12:42 IST" duration-ms="52601">
-      <class name="testcases.SubCategoryTest">
-        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testcases.SubCategoryTest@e25951c]" started-at="2025-02-03T13:12:26 IST" name="initializeBrowser" finished-at="2025-02-03T13:12:28 IST" duration-ms="2402" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializeBrowser -->
-        <test-method signature="addingTheNewSubCategoryToThePage()[pri:1, instance:testcases.SubCategoryTest@e25951c]" started-at="2025-02-03T13:12:28 IST" name="addingTheNewSubCategoryToThePage" description="Add the sub category" finished-at="2025-02-03T13:12:31 IST" duration-ms="3099" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addingTheNewSubCategoryToThePage -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testcases.SubCategoryTest@e25951c]" started-at="2025-02-03T13:12:31 IST" name="driverQuit" finished-at="2025-02-03T13:12:32 IST" duration-ms="389" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=addingTheNewSubCategoryToThePage status=SUCCESS method=SubCategoryTest.addingTheNewSubCategoryToThePage()[pri:1, instance:testcases.SubCategoryTest@e25951c] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverQuit -->
-      </class> <!-- testcases.SubCategoryTest -->
+    <test started-at="2025-02-06T08:19:22 IST" name="Test1" finished-at="2025-02-06T08:19:54 IST" duration-ms="32650">
       <class name="testcases.HomePageTest">
-        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testcases.HomePageTest@3cfdd820]" started-at="2025-02-03T13:12:12 IST" name="initializeBrowser" finished-at="2025-02-03T13:12:14 IST" duration-ms="2219" status="PASS">
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testcases.HomePageTest@2f4948e4]" started-at="2025-02-06T08:19:22 IST" name="initializeBrowser" finished-at="2025-02-06T08:19:54 IST" duration-ms="32412" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[Chrome]]>
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=132.0.6834.160)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e5f0fd071bf401a83edc41e099b93348, get {url=https://groceryapp.uniqassosiates.com/admin/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.160, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\febat\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51094}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51094/devtoo..., se:cdpVersion: 132.0.6834.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e5f0fd071bf401a83edc41e099b93348]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=132.0.6834.160)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e5f0fd071bf401a83edc41e099b93348, get {url=https://groceryapp.uniqassosiates.com/admin/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.160, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\febat\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51094}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51094/devtoo..., se:cdpVersion: 132.0.6834.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e5f0fd071bf401a83edc41e099b93348
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+at automationcore.BaseClass.initializeBrowser(BaseClass.java:43)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeBrowser -->
-        <test-method signature="clickingOnLogoutFromHomePage()[pri:1, instance:testcases.HomePageTest@3cfdd820]" started-at="2025-02-03T13:12:14 IST" name="clickingOnLogoutFromHomePage" description="click logout" finished-at="2025-02-03T13:12:15 IST" duration-ms="1324" status="PASS">
+        <test-method signature="clickingOnLogoutFromHomePage()[pri:1, instance:testcases.HomePageTest@2f4948e4]" started-at="2025-02-06T08:19:54 IST" name="clickingOnLogoutFromHomePage" description="click logout" finished-at="2025-02-06T08:19:54 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=132.0.6834.160)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e5f0fd071bf401a83edc41e099b93348, get {url=https://groceryapp.uniqassosiates.com/admin/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.160, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\febat\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51094}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51094/devtoo..., se:cdpVersion: 132.0.6834.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e5f0fd071bf401a83edc41e099b93348]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=132.0.6834.160)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e5f0fd071bf401a83edc41e099b93348, get {url=https://groceryapp.uniqassosiates.com/admin/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.160, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\febat\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51094}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51094/devtoo..., se:cdpVersion: 132.0.6834.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e5f0fd071bf401a83edc41e099b93348
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+at automationcore.BaseClass.initializeBrowser(BaseClass.java:43)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickingOnLogoutFromHomePage -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testcases.HomePageTest@3cfdd820]" started-at="2025-02-03T13:12:15 IST" name="driverQuit" finished-at="2025-02-03T13:12:16 IST" duration-ms="245" status="PASS">
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testcases.HomePageTest@2f4948e4]" started-at="2025-02-06T08:19:54 IST" name="driverQuit" finished-at="2025-02-06T08:19:54 IST" duration-ms="175" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=clickingOnLogoutFromHomePage status=SUCCESS method=HomePageTest.clickingOnLogoutFromHomePage()[pri:1, instance:testcases.HomePageTest@3cfdd820] output={null}]]]>
+                <![CDATA[[TestResult name=clickingOnLogoutFromHomePage status=SKIP method=HomePageTest.clickingOnLogoutFromHomePage()[pri:1, instance:testcases.HomePageTest@2f4948e4] output={null}]]]>
               </value>
             </param>
           </params>
@@ -74,275 +156,145 @@
           </reporter-output>
         </test-method> <!-- driverQuit -->
       </class> <!-- testcases.HomePageTest -->
-      <class name="testcases.CategoryTest">
-        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testcases.CategoryTest@928763c]" started-at="2025-02-03T13:12:16 IST" name="initializeBrowser" finished-at="2025-02-03T13:12:18 IST" duration-ms="2466" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializeBrowser -->
-        <test-method signature="addingTheNewCategoryToThePage()[pri:1, instance:testcases.CategoryTest@928763c]" started-at="2025-02-03T13:12:18 IST" name="addingTheNewCategoryToThePage" description="Add a new Category" finished-at="2025-02-03T13:12:21 IST" duration-ms="2544" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addingTheNewCategoryToThePage -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testcases.CategoryTest@928763c]" started-at="2025-02-03T13:12:21 IST" name="driverQuit" finished-at="2025-02-03T13:12:21 IST" duration-ms="377" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=addingTheNewCategoryToThePage status=SUCCESS method=CategoryTest.addingTheNewCategoryToThePage()[pri:1, instance:testcases.CategoryTest@928763c] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testcases.CategoryTest@928763c]" started-at="2025-02-03T13:12:21 IST" name="initializeBrowser" finished-at="2025-02-03T13:12:23 IST" duration-ms="2303" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializeBrowser -->
-        <test-method signature="searchTheCategoryFromTheList()[pri:2, instance:testcases.CategoryTest@928763c]" started-at="2025-02-03T13:12:23 IST" name="searchTheCategoryFromTheList" description="Search a category" finished-at="2025-02-03T13:12:26 IST" duration-ms="2316" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchTheCategoryFromTheList -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testcases.CategoryTest@928763c]" started-at="2025-02-03T13:12:26 IST" name="driverQuit" finished-at="2025-02-03T13:12:26 IST" duration-ms="283" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=searchTheCategoryFromTheList status=SUCCESS method=CategoryTest.searchTheCategoryFromTheList()[pri:2, instance:testcases.CategoryTest@928763c] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverQuit -->
-      </class> <!-- testcases.CategoryTest -->
-      <class name="testcases.ManageNewsTest">
-        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testcases.ManageNewsTest@471a9022]" started-at="2025-02-03T13:12:37 IST" name="initializeBrowser" finished-at="2025-02-03T13:12:39 IST" duration-ms="2310" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializeBrowser -->
-        <test-method signature="createNewManageNewsToThePage()[pri:1, instance:testcases.ManageNewsTest@471a9022]" started-at="2025-02-03T13:12:39 IST" name="createNewManageNewsToThePage" description=" Add new news to manage users page" finished-at="2025-02-03T13:12:41 IST" duration-ms="2066" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createNewManageNewsToThePage -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testcases.ManageNewsTest@471a9022]" started-at="2025-02-03T13:12:41 IST" name="driverQuit" finished-at="2025-02-03T13:12:42 IST" duration-ms="281" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=createNewManageNewsToThePage status=SUCCESS method=ManageNewsTest.createNewManageNewsToThePage()[pri:1, instance:testcases.ManageNewsTest@471a9022] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverQuit -->
-      </class> <!-- testcases.ManageNewsTest -->
       <class name="testcases.LoginTest">
-        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testcases.LoginTest@4bff7da0]" started-at="2025-02-03T13:11:49 IST" name="initializeBrowser" finished-at="2025-02-03T13:11:53 IST" duration-ms="4435" status="PASS">
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testcases.LoginTest@6b2ea799]" started-at="2025-02-06T08:19:22 IST" name="initializeBrowser" finished-at="2025-02-06T08:19:41 IST" duration-ms="18908" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[Chrome]]>
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=132.0.6834.160)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [aaa3b526820cab884bad0806d4251912, get {url=https://groceryapp.uniqassosiates.com/admin/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.160, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\febat\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51093}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51093/devtoo..., se:cdpVersion: 132.0.6834.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: aaa3b526820cab884bad0806d4251912]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=132.0.6834.160)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [aaa3b526820cab884bad0806d4251912, get {url=https://groceryapp.uniqassosiates.com/admin/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.160, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\febat\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51093}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51093/devtoo..., se:cdpVersion: 132.0.6834.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: aaa3b526820cab884bad0806d4251912
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+at automationcore.BaseClass.initializeBrowser(BaseClass.java:43)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeBrowser -->
-        <test-method signature="userLoginWithValidUsernameAndValidPassword()[pri:1, instance:testcases.LoginTest@4bff7da0]" started-at="2025-02-03T13:11:53 IST" name="userLoginWithValidUsernameAndValidPassword" description="User Login With Valid Username and Valid Password" finished-at="2025-02-03T13:11:56 IST" duration-ms="2083" status="PASS">
+        <test-method signature="userLoginWithValidUsernameAndValidPassword()[pri:1, instance:testcases.LoginTest@6b2ea799]" started-at="2025-02-06T08:19:41 IST" name="userLoginWithValidUsernameAndValidPassword" description="User Login With Valid Username and Valid Password" finished-at="2025-02-06T08:19:41 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=132.0.6834.160)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [aaa3b526820cab884bad0806d4251912, get {url=https://groceryapp.uniqassosiates.com/admin/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.160, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\febat\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51093}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51093/devtoo..., se:cdpVersion: 132.0.6834.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: aaa3b526820cab884bad0806d4251912]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=132.0.6834.160)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [aaa3b526820cab884bad0806d4251912, get {url=https://groceryapp.uniqassosiates.com/admin/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.160, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\febat\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51093}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51093/devtoo..., se:cdpVersion: 132.0.6834.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: aaa3b526820cab884bad0806d4251912
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+at automationcore.BaseClass.initializeBrowser(BaseClass.java:43)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userLoginWithValidUsernameAndValidPassword -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testcases.LoginTest@4bff7da0]" started-at="2025-02-03T13:11:56 IST" name="driverQuit" finished-at="2025-02-03T13:11:56 IST" duration-ms="285" status="PASS">
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testcases.LoginTest@6b2ea799]" started-at="2025-02-06T08:19:41 IST" name="driverQuit" finished-at="2025-02-06T08:19:41 IST" duration-ms="232" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=userLoginWithValidUsernameAndValidPassword status=SUCCESS method=LoginTest.userLoginWithValidUsernameAndValidPassword()[pri:1, instance:testcases.LoginTest@4bff7da0] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testcases.LoginTest@4bff7da0]" started-at="2025-02-03T13:11:56 IST" name="initializeBrowser" finished-at="2025-02-03T13:11:58 IST" duration-ms="2319" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializeBrowser -->
-        <test-method signature="userLoginWithInvalidUsernameAndValidPassword()[pri:2, instance:testcases.LoginTest@4bff7da0]" started-at="2025-02-03T13:11:58 IST" name="userLoginWithInvalidUsernameAndValidPassword" description="User Login With InValid Username and Valid Password" finished-at="2025-02-03T13:11:59 IST" duration-ms="647" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- userLoginWithInvalidUsernameAndValidPassword -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testcases.LoginTest@4bff7da0]" started-at="2025-02-03T13:11:59 IST" name="driverQuit" finished-at="2025-02-03T13:11:59 IST" duration-ms="234" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=userLoginWithInvalidUsernameAndValidPassword status=SUCCESS method=LoginTest.userLoginWithInvalidUsernameAndValidPassword()[pri:2, instance:testcases.LoginTest@4bff7da0] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testcases.LoginTest@4bff7da0]" started-at="2025-02-03T13:11:59 IST" name="initializeBrowser" finished-at="2025-02-03T13:12:01 IST" duration-ms="2304" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializeBrowser -->
-        <test-method signature="userLoginWithValidUsernameAndInvalidPassword(java.lang.String,java.lang.String)[pri:3, instance:testcases.LoginTest@4bff7da0]" started-at="2025-02-03T13:12:01 IST" name="userLoginWithValidUsernameAndInvalidPassword" description="User Login With Valid Username and InValid Password" data-provider="loginProvider" finished-at="2025-02-03T13:12:02 IST" duration-ms="510" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin12345]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin34567]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- userLoginWithValidUsernameAndInvalidPassword -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testcases.LoginTest@4bff7da0]" started-at="2025-02-03T13:12:02 IST" name="driverQuit" finished-at="2025-02-03T13:12:02 IST" duration-ms="214" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=userLoginWithValidUsernameAndInvalidPassword status=SUCCESS method=LoginTest.userLoginWithValidUsernameAndInvalidPassword(java.lang.String,java.lang.String)[pri:3, instance:testcases.LoginTest@4bff7da0] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testcases.LoginTest@4bff7da0]" started-at="2025-02-03T13:12:02 IST" name="initializeBrowser" finished-at="2025-02-03T13:12:04 IST" duration-ms="2138" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializeBrowser -->
-        <test-method signature="userLoginWithValidUsernameAndInvalidPassword(java.lang.String,java.lang.String)[pri:3, instance:testcases.LoginTest@4bff7da0]" started-at="2025-02-03T13:12:04 IST" name="userLoginWithValidUsernameAndInvalidPassword" description="User Login With Valid Username and InValid Password" data-provider="loginProvider" finished-at="2025-02-03T13:12:05 IST" duration-ms="1143" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin234]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- userLoginWithValidUsernameAndInvalidPassword -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testcases.LoginTest@4bff7da0]" started-at="2025-02-03T13:12:05 IST" name="driverQuit" finished-at="2025-02-03T13:12:06 IST" duration-ms="273" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=userLoginWithValidUsernameAndInvalidPassword status=SUCCESS method=LoginTest.userLoginWithValidUsernameAndInvalidPassword(java.lang.String,java.lang.String)[pri:3, instance:testcases.LoginTest@4bff7da0] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testcases.LoginTest@4bff7da0]" started-at="2025-02-03T13:12:06 IST" name="initializeBrowser" finished-at="2025-02-03T13:12:08 IST" duration-ms="2193" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializeBrowser -->
-        <test-method signature="userLoginWithValidUsernameAndInvalidPassword(java.lang.String,java.lang.String)[pri:3, instance:testcases.LoginTest@4bff7da0]" started-at="2025-02-03T13:12:08 IST" name="userLoginWithValidUsernameAndInvalidPassword" description="User Login With Valid Username and InValid Password" data-provider="loginProvider" finished-at="2025-02-03T13:12:08 IST" duration-ms="560" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin2345]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin5678]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- userLoginWithValidUsernameAndInvalidPassword -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testcases.LoginTest@4bff7da0]" started-at="2025-02-03T13:12:08 IST" name="driverQuit" finished-at="2025-02-03T13:12:09 IST" duration-ms="256" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=userLoginWithValidUsernameAndInvalidPassword status=SUCCESS method=LoginTest.userLoginWithValidUsernameAndInvalidPassword(java.lang.String,java.lang.String)[pri:3, instance:testcases.LoginTest@4bff7da0] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testcases.LoginTest@4bff7da0]" started-at="2025-02-03T13:12:09 IST" name="initializeBrowser" finished-at="2025-02-03T13:12:11 IST" duration-ms="2272" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializeBrowser -->
-        <test-method signature="userLoginWithInvalidUsernameAndInvalidPassword()[pri:4, instance:testcases.LoginTest@4bff7da0]" started-at="2025-02-03T13:12:11 IST" name="userLoginWithInvalidUsernameAndInvalidPassword" description="User Login With InValid Username and InValid Password" finished-at="2025-02-03T13:12:12 IST" duration-ms="534" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- userLoginWithInvalidUsernameAndInvalidPassword -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testcases.LoginTest@4bff7da0]" started-at="2025-02-03T13:12:12 IST" name="driverQuit" finished-at="2025-02-03T13:12:12 IST" duration-ms="237" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=userLoginWithInvalidUsernameAndInvalidPassword status=SUCCESS method=LoginTest.userLoginWithInvalidUsernameAndInvalidPassword()[pri:4, instance:testcases.LoginTest@4bff7da0] output={null}]]]>
+                <![CDATA[[TestResult name=userLoginWithValidUsernameAndValidPassword status=SKIP method=LoginTest.userLoginWithValidUsernameAndValidPassword()[pri:1, instance:testcases.LoginTest@6b2ea799] output={null}]]]>
               </value>
             </param>
           </params>
@@ -350,34 +302,6 @@
           </reporter-output>
         </test-method> <!-- driverQuit -->
       </class> <!-- testcases.LoginTest -->
-      <class name="testcases.AdminUserTest">
-        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testcases.AdminUserTest@15f47664]" started-at="2025-02-03T13:12:32 IST" name="initializeBrowser" finished-at="2025-02-03T13:12:34 IST" duration-ms="2254" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializeBrowser -->
-        <test-method signature="addNewAdminUsersToThePage()[pri:1, instance:testcases.AdminUserTest@15f47664]" started-at="2025-02-03T13:12:34 IST" name="addNewAdminUsersToThePage" description="Add new Admin User" finished-at="2025-02-03T13:12:37 IST" duration-ms="2541" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addNewAdminUsersToThePage -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testcases.AdminUserTest@15f47664]" started-at="2025-02-03T13:12:37 IST" name="driverQuit" finished-at="2025-02-03T13:12:37 IST" duration-ms="342" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=addNewAdminUsersToThePage status=SUCCESS method=AdminUserTest.addNewAdminUsersToThePage()[pri:1, instance:testcases.AdminUserTest@15f47664] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverQuit -->
-      </class> <!-- testcases.AdminUserTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Test1 -->
+  </suite> <!-- Paralleltesting -->
 </testng-results>
